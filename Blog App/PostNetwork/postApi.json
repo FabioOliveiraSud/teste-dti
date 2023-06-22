@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Introdução ao Blogging",
+      "author": "John Doe",
+      "date": "2023-06-15 06:18:46 +0000",
+      "content": "Este é o primeiro post do nosso blog. Bem-vindos!"
+    },
+    {
+      "id": 2,
+      "title": "Dicas para Escrever Posts de Qualidade",
+      "author": "Jane Smith",
+      "date": "2023-06-18 06:18:46 +0000",
+      "content": "Neste post, vamos compartilhar algumas dicas úteis para escrever posts de qualidade para o seu blog. Espero que gostem!"
+    },
+    {
+      "id": 3,
+      "title": "Como Promover seu Blog nas Redes Sociais",
+      "author": "John Doe",
+      "date": "2023-06-20 06:18:46 +0000",
+      "content": "Neste post, vamos discutir estratégias eficazes para promover o seu blog nas redes sociais e alcançar um público maior. Não perca!"
+    }
+  ]
+}

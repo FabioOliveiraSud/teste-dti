@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Post View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CreatePostViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="CreatePostViewController" customModule="Blog_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QB-AJ-Qrl">
+                                <rect key="frame" x="24" y="770" width="345" height="37"/>
+                                <color key="backgroundColor" red="0.23633495430000001" green="0.90877478180000004" blue="1" alpha="0.48941949499999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Adicionar Post">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4Jg-oF-kNK"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira um título" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r44-kN-N9K">
+                                <rect key="frame" x="16" y="99" width="361" height="34"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ooY-OW-mk1">
+                                <rect key="frame" x="16" y="192" width="361" height="200"/>
+                                <color key="backgroundColor" red="0.96464646464646464" green="0.96464646464646464" blue="0.96464646464646464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite seu texto abaixo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmD-tH-4s6">
+                                <rect key="frame" x="16" y="155" width="177" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1QB-AJ-Qrl" secondAttribute="trailing" constant="24" id="3OK-Zw-aUd"/>
+                            <constraint firstItem="ooY-OW-mk1" firstAttribute="trailing" secondItem="r44-kN-N9K" secondAttribute="trailing" id="5CN-cU-6eH"/>
+                            <constraint firstItem="ooY-OW-mk1" firstAttribute="leading" secondItem="r44-kN-N9K" secondAttribute="leading" id="7bO-I9-bSs"/>
+                            <constraint firstItem="r44-kN-N9K" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="EbK-CP-yPn"/>
+                            <constraint firstItem="1QB-AJ-Qrl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="FrQ-ye-e4v"/>
+                            <constraint firstItem="ooY-OW-mk1" firstAttribute="top" secondItem="r44-kN-N9K" secondAttribute="bottom" constant="59" id="LIm-tc-1c1"/>
+                            <constraint firstAttribute="bottom" secondItem="1QB-AJ-Qrl" secondAttribute="bottom" constant="45" id="MWH-ZH-Bfd"/>
+                            <constraint firstItem="ooY-OW-mk1" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.234742" id="aAb-92-XQI"/>
+                            <constraint firstItem="EmD-tH-4s6" firstAttribute="leading" secondItem="r44-kN-N9K" secondAttribute="leading" id="j2m-AS-ZC5"/>
+                            <constraint firstItem="r44-kN-N9K" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="lKC-Fc-VJ8"/>
+                            <constraint firstItem="EmD-tH-4s6" firstAttribute="top" secondItem="r44-kN-N9K" secondAttribute="bottom" constant="22" id="m9F-96-YtQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="r44-kN-N9K" secondAttribute="trailing" constant="16" id="tYb-yg-YLl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentTextView" destination="ooY-OW-mk1" id="gIk-uH-Edq"/>
+                        <outlet property="titleTextField" destination="r44-kN-N9K" id="z1w-1e-xmS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
